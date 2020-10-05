@@ -1,0 +1,131 @@
+body, p, h1, ul, li{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: "roboto", sans-serif;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+img{
+    /* max-width: 100px; */
+}
+
+/* GRID GERAL */
+
+.estrutura{
+    display: grid;
+    grid-template-columns:minmax(160px,1fr) 3fr 300px;
+    grid-template-areas: 
+        "header header header"
+        "hero hero hero"
+        "about about about"
+        "services services services"
+        "money money money"
+        "photo photo photo"
+    ;
+}
+/* HEADER */
+
+
+.header{
+    grid-area: header;
+     
+    background:  #232323;
+    /* padding: 30px; */
+    /* grid dentro do grid */
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+.amburguer{
+    margin-top: 30px;
+    margin-left: 138px;
+}
+
+.header nav ul{
+    /* colocar na mesma linha */
+    display: flex;
+    /* quebra a linha */
+    flex-wrap: wrap;
+}
+header nav a{
+    
+    padding: 5px;
+    color:#FFFFFF;
+    
+}
+
+.header nav a:hover{
+    color: violet;
+}
+.header nav img a{
+    display: block;
+    padding: 10px;
+}
+/* ----------------------------------------------- */
+
+
+.hero{
+    display: grid;
+    grid-template-columns: 700px 700px;
+    grid-area: hero;
+    background: #232323;
+}
+
+.hero h1{
+    margin: 240px auto 30px 138px;
+    color: #BC9E6C;
+}
+
+.hero p{
+    color: #FFFFFF;
+    margin-left: 138px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    
+    text-align: left;
+    
+}
+.hero ul{
+    margin: 30px auto 240px 138px;
+    max-width: 200px;
+    background: #F17D3C;
+    border-radius: 10px;
+    text-align: center;
+}
+.hero ul li a{
+    color: #FFFFFF;
+}
+
+.foto-barb img{
+    width: auto;
+    border-radius: 50px;
+    
+}
+
+
+
+.about{
+    grid-area: about;
+}
+
+.services{
+    grid-area: services;
+}
+
+.money{
+    grid-area: money;
+}
+
+.photo{
+    grid-area: photo;
+}
