@@ -14,6 +14,12 @@ a{
     text-decoration: none;
 }
 
+/* img{
+    display:block;
+    width: 100%;
+    border-radius: 5px;
+} */
+
 
 
 /* GRID GERAL */
@@ -33,8 +39,57 @@ a{
         "barba barba"
         "photo photo"
         "agende agende"
+        "footer footer"
     ;
 }
+
+/* @media(max-width:1020px){
+    .estrutura{
+        grid-template-areas:
+        "header"
+        "header"
+        "hero"
+        "hero"
+        "about about"
+        "test test"
+        "serv serv"
+        "services services"
+        "money money"
+        "barba barba"
+        "photo photo"
+        "agende agende"
+        "footer footer"
+        ;
+    }
+} */
+
+/* @media(max-width:720px){
+    .estrutura{
+        grid-template-areas:
+        "header"
+        "header"
+        "hero hero"
+
+        "about about"
+        "test test"
+        "serv serv"
+        "services services"
+        "money money"
+        "barba barba"
+        "photo photo"
+        "agende agende"
+        "footer footer"
+        ;
+    }
+} */
+@media(max-width:320px){
+    .estrutura{
+        grid-template-areas:
+        
+        ;
+    }
+}
+
 /* HEADER */
 
 
@@ -45,25 +100,25 @@ a{
     /* padding: 30px; */
     /* grid dentro do grid */
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr auto ;
     /* align-items: center; */
 }
 .logo{
     margin-top: 5px;
 }
-.logo a{
+/* .logo a{
     margin-left: 138px;
-}
+} */
 
 .logo img{
     
     border-radius: 50px;
     padding: 10px;
-    width: 50px;
+    width: 35px;
 }
 .localize{
     margin-left: auto;
-    margin-right: 150px;
+    /* margin-right: 150px; */
 }
 .header nav ul{
     /* colocar na mesma linha */
@@ -86,6 +141,22 @@ header nav a{
     display: block;
     padding: 10px;
 }
+
+@media (max-width: 720px) {
+    .header {
+      grid-template-columns: auto;
+    }
+    .logo {
+      align-items: flex-start;
+
+    }
+    /* .header nav a {
+      
+    } */
+    .header li + li {
+      margin-left: 5px;
+    }
+  }
 /* ----------------------------------------------- */
 /* Hero */
 
@@ -129,7 +200,54 @@ header nav a{
 }
 .foto-barb img{
     /* width: auto; */
+    
     border-radius: 50px;
+    
+}
+@media(max-width:1024px){
+    .hero{
+        grid-template-columns: auto;
+    }
+    
+    .hero h1{
+        margin: 30px auto 15px 138px;
+        /* text-align: left; */
+    }
+    .hero p{
+        margin:15px 300px 15px 138px;
+    }
+    .barb-david ul{
+        
+        margin: 30px auto 30px 138px;
+    }
+    .foto-barb img{
+        margin: 30px auto 30px 138px;
+        
+        width: 320px;
+    }
+}
+@media(max-width:720px){
+    .hero{
+        grid-template-columns: auto;
+        text-align:left;
+        align-items: left;
+    }
+    .hero h1{
+        margin: 30px auto 15px 15px;
+        /* text-align: left; */
+    }
+    .hero p{
+        margin:15px 50px 15px 15px;  
+    }
+    .barb-david ul{
+        
+        margin: 30px auto 30px 15px;
+    }
+    .foto-barb img{
+        margin: 15px auto 30px 1px;
+        
+        width: 320px;
+    }
     
 }
 /* --------------------------------------------------------------------------------- */
@@ -151,12 +269,13 @@ header nav a{
     color: #D6D6D6;
 }
 .about p{
+    margin-top: 15px;
     color: #FFFFFF;
 }
-#about-text{
+.about-text{
     margin-left: 138px;
 }
-#about-text img{
+.about-text img{
     margin-top: 15px;
     max-width: 40px;
     border-radius: 50px;
@@ -167,6 +286,48 @@ header nav a{
     max-width: 500px;
 }
 
+@media (max-width:1024px){
+    .about{
+        grid-template-columns: auto;
+    }
+  
+    .about h1{
+        margin: 30px auto 15px 0px;
+    }
+    .about h2{
+        margin: 5px auto 15px 0px;
+    }
+    .about p{
+        margin:15px 300px 15px 0px;
+    }
+    .segundo img{
+        
+        margin: 30px auto 30px 138px;
+        width: 320px;
+    }
+}
+@media (max-width:720px){
+    .about{
+        grid-template-columns: auto;
+        
+    }
+    .about-text{
+        margin: 30px auto 15px 15px;
+    }
+    .about-text img{
+        margin: 15px 19px 15px 0px;
+    }
+    
+    .about p{
+        margin:15px 50px 15px 5px; 
+    }
+    .about img{
+        margin: none;
+        margin: 15px auto 30px 1px;
+        
+        width: 320px;
+    }
+}
 /* ---------------------------------------------- */
 /* TEST */
 .test{
@@ -240,6 +401,24 @@ header nav a{
     padding: 10px;
     color: #FFFFFF;
 }
+@media (max-width:930px){
+    .services{
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (max-width:720px){
+    .services{
+        grid-template-columns: auto auto;
+    }
+}
+@media (max-width:490px){
+    .services{
+        grid-template-columns: auto;
+    }
+}
+
+
 /* ----------------------------------------------------- */
 /* MONEY */
 
@@ -266,6 +445,27 @@ header nav a{
     font-size: 21px;
     color: #D6D6D6;
     
+}
+
+@media (max-width:800px){
+    .money{
+        grid-template-columns: auto;
+    }
+}
+@media (max-width:440px){
+    .money{
+        grid-template-columns: auto;
+        
+    }
+    .money h1{
+        margin: auto auto auto 10px;
+    }
+    .money h2{
+        margin: auto;
+    }
+    .money ul li{
+        margin: auto auto auto 10px;
+    }
 }
 /* ------------------------------------------------------------ */
 /* barba */
@@ -297,7 +497,7 @@ header nav a{
     align-items: center;
     background-color: #232323;
     text-align: center;
-    padding: 100px;
+    /* padding: 100px; */
     
 
 }
@@ -315,7 +515,27 @@ header nav a{
 }
 
 .photo p{
+    padding: 40px;
     color: #D6D6D6;
+}
+@media(max-width:920px){
+    .photo{
+        grid-template-columns: auto auto;
+    }
+}
+@media(max-width:680px){
+    .photo{
+        grid-template-columns: auto;
+    }
+}
+@media(max-width:440px){
+    .photo{
+        grid-template-columns: auto;
+        margin: none;
+        padding: none;
+        
+    }
+   
 }
 /* ---------------------------------------------- */
 /* agende */
@@ -346,3 +566,31 @@ header nav a{
 .agende li a:hover{
     color: violet;
 }
+
+@media (max-width:780px){
+    .agende{
+        grid-template-columns: auto;
+        
+    }
+    .agende h1{
+        margin: auto auto 10px auto;
+    }
+}
+/* ------------------------------------ */
+/* footer */
+
+.footer{
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #232323;
+    text-align: center;
+    padding: 20px;
+
+}
+
+
+.footer h2{
+    color: #BC9E6C;
+}
+
