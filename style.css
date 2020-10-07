@@ -14,22 +14,25 @@ a{
     text-decoration: none;
 }
 
-img{
-    /* max-width: 100px; */
-}
+
 
 /* GRID GERAL */
 
 .estrutura{
+    
     display: grid;
-    grid-template-columns:minmax(160px,1fr) 3fr 300px;
+    grid-template-columns:1fr 1fr;
     grid-template-areas: 
-        "header header header"
-        "hero hero hero"
-        "about about about"
-        "services services services"
-        "money money money"
-        "photo photo photo"
+        "header header"
+        "hero hero"
+        "about about"
+        "test test"
+        "serv serv"
+        "services services"
+        "money money"
+        "barba barba"
+        "photo photo"
+        "agende agende"
     ;
 }
 /* HEADER */
@@ -37,25 +40,37 @@ img{
 
 .header{
     grid-area: header;
-     
-    background:  #232323;
+    
+    background:  #252525;
     /* padding: 30px; */
     /* grid dentro do grid */
     display: grid;
-    grid-template-columns: auto auto;
-    align-items: center;
+    grid-template-columns: 1fr 1fr ;
+    /* align-items: center; */
 }
-
-.amburguer{
-    margin-top: 30px;
+.logo{
+    margin-top: 5px;
+}
+.logo a{
     margin-left: 138px;
 }
 
+.logo img{
+    
+    border-radius: 50px;
+    padding: 10px;
+    width: 50px;
+}
+.localize{
+    margin-left: auto;
+    margin-right: 150px;
+}
 .header nav ul{
     /* colocar na mesma linha */
     display: flex;
     /* quebra a linha */
     flex-wrap: wrap;
+    margin: 30px auto auto auto;
 }
 header nav a{
     
@@ -72,12 +87,15 @@ header nav a{
     padding: 10px;
 }
 /* ----------------------------------------------- */
-
+/* Hero */
 
 .hero{
-    display: grid;
-    grid-template-columns: 700px 700px;
+    /* GRID PRINCIPAL */
     grid-area: hero;
+
+    /* GRID SECUNDARIO */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background: #232323;
 }
 
@@ -98,6 +116,7 @@ header nav a{
 .hero ul{
     margin: 30px auto 240px 138px;
     max-width: 200px;
+    padding: 10px;
     background: #F17D3C;
     border-radius: 10px;
     text-align: center;
@@ -105,27 +124,225 @@ header nav a{
 .hero ul li a{
     color: #FFFFFF;
 }
-
+.hero ul li a:hover{
+    color: violet;
+}
 .foto-barb img{
-    width: auto;
+    /* width: auto; */
     border-radius: 50px;
     
 }
-
-
+/* --------------------------------------------------------------------------------- */
+/* ABOUT */
 
 .about{
+    /* GRID PRINCIPAL */
     grid-area: about;
+    /* ------------------ */
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    background-color:#252525;
+    
+}
+.about h1{
+    color: #BC9E6C;
+}
+.about h2{
+    color: #D6D6D6;
+}
+.about p{
+    color: #FFFFFF;
+}
+#about-text{
+    margin-left: 138px;
+}
+#about-text img{
+    margin-top: 15px;
+    max-width: 40px;
+    border-radius: 50px;
+}
+.segundo img{
+    padding: 30px;
+    border-radius: 50px;
+    max-width: 500px;
 }
 
+/* ---------------------------------------------- */
+/* TEST */
+.test{
+    grid-area: test;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #232323;
+    text-align: center;
+}
+
+.test img{
+    margin: auto;
+    padding: 15px;
+    color: #FFFFFF;
+   
+}
+
+.test h1{
+    
+    color: #BC9E6C;
+}
+
+.test h2{
+    
+    color: #D6D6D6;
+}
+/* serv */
+
+.serv{
+    grid-area: serv;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #252525;
+    text-align: center;
+    padding: 20px;
+}
+.serv img{
+    border-radius: 50px;
+    margin: auto;
+}
+.serv h1{
+    color: #BC9E6C;
+}
+.serv h2{
+    color: #D6D6D6;
+}
+/* ----------------------------------------------------------- */
+/* serviços */
 .services{
     grid-area: services;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 40px;
+    background-color: #252525;
+    text-align: center;
 }
+.linha{
+    border-radius: 50px;
+}
+.foto {
+    border-radius: 50px;
+    padding: 10px;
+    max-width: 200px;
+    height: 150px;
+}
+.services h2{
+    
+    color:#BC9E6C;
+}
+.services p{
+    padding: 10px;
+    color: #FFFFFF;
+}
+/* ----------------------------------------------------- */
+/* MONEY */
 
 .money{
     grid-area: money;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background: #232323;
+    
 }
 
+.money h1{
+    color: #BC9E6C;
+    margin: auto auto 20px 138px;
+
+}
+.money h2{
+    color: #D6D6D6;
+    padding: 20px;
+    margin: auto auto auto 138px;
+}
+.money li{
+    margin: auto auto 10px 138px;
+    font-size: 21px;
+    color: #D6D6D6;
+    
+}
+/* ------------------------------------------------------------ */
+/* barba */
+
+.barba{
+    grid-area: barba;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #252525;
+    text-align: center;
+}
+.barba img{
+    padding: 10px;
+    border-radius: 50px;
+    margin: auto;
+}
+.barba h1{
+    color: #BC9E6C;
+}
+.barba h2{
+    color: #D6D6D6;
+}
+
+/* PHOTO */
 .photo{
     grid-area: photo;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    background-color: #232323;
+    text-align: center;
+    padding: 100px;
+    
+
+}
+
+.photo img{
+    
+    border-radius: 20px;
+    max-width: 300px;
+    height: 400px;
+
+}
+
+.photo h2{
+    color:#BC9E6C;
+}
+
+.photo p{
+    color: #D6D6D6;
+}
+/* ---------------------------------------------- */
+/* agende */
+.agende{
+    grid-area: agende;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #252525;
+    padding: 30px;
+}
+.agende h1{
+    font-size: 21px;
+    margin: auto auto auto 138px;
+    color: #BC9E6C;
+}
+.agende ul {
+    display: block;
+    padding: 10px;
+    background-color: #F17D3C;
+    border-radius: 50px;
+    text-align: center;
+    margin: auto;
+}
+.agende li a{
+    color: #FFFFFF;
+}
+
+.agende li a:hover{
+    color: violet;
 }

@@ -11,8 +11,12 @@
     <div class="estrutura">
         <!-- Header -->
         <header class="header">
-            <a href="#" class="amburguer"><img src="/img/menu-amburguer.png"></a>
-            <nav>
+            
+            <nav class="logo">
+                <a href="#"><img src="/img/menu-amburguer.png"></a>
+                <a href="#"><img src="/img/logo.jpg"></a>
+            </nav>
+            <nav class="localize">
                 <ul>
                     <li><img src="/img/localize.png"><a href="#"> Av Paulista 000 - pinheiros - SP</a><img></li>
                     <li><img src="/img/whatsapp.png"><a href="#"> 11 3900 0321 </a><img></li>
@@ -39,44 +43,73 @@
         </hero>
 
         <!-- ABOUT -->
-        <about class="about">
-            <h2>Sobre a Barbearia</h2>
-            <h1>Bem-vindo a Barbearia</h1>
-            <p>Lorem ipsum mattis sollicitudin quisque lacus at sed pharetra habitasse nec fermentum, interdum sit vel euismod netus donec pulvinar mollis lobortis mollis, varius tempus eros porta augue convallis inceptos volutpat risus tristique. proin ultrices aliquet torquent ligula feugiat porttitor taciti, diam mi donec tellus potenti. </p>
-            <img src="/img/bem-vindo.jpg">
-
+        <about class="about">         
+            <div id="about-text">
+                <img src="/img/Line.png">
+                <h2>Sobre a Barbearia</h2>
+                <h1>Bem-vindo a Barbearia</h1>
+                <p>Lorem ipsum mattis sollicitudin quisque lacus at sed pharetra habitasse nec fermentum, interdum sit vel euismod netus donec pulvinar mollis lobortis mollis, varius tempus eros porta augue convallis inceptos volutpat risus tristique. proin ultrices aliquet torquent ligula feugiat porttitor taciti, diam mi donec tellus potenti. </p>
+            </div>
+            <div class="segundo">
+                <img src="/img/about.jpeg">
+            </div>
+        </about>
+        
             <!-- TESTEMUNHO -->
+        <test class="test">
+            
             <img src="img/aspas-duplas.png">
             <h1>A melhor barbearia de São Paulo</h1>
             <h2>fulano de tal</h2>
+            
 
-        </about>
+        </test>
+        <!-- SERV -->
+        <serv class="serv">
+            <img src="/img/Line.png">
+            <h2>Nossos Serviços</h2>
+            <h1>Conheça as Especialidades da casa</h1>
+
+        </serv>
+
 
         <!-- SERVIÇOS -->
 
         <services class="services">
-            <h2>Nossos Serviços</h2>
-            <h1>Conheça as Especialidades da casa</h1>
-                <ul>
-                    <img src="/img/cabelo.jpg">
-                    <h2>cabelo</h2>
-                    <p>Lorem ipsum mattis sollicitudin quisque lacus at sed pharetra habitasse nec fermentum, interdum sit vel euismod netus donec pulvinar mollis lobortis mollis, varius tempus eros porta augue convallis inceptos volutpat risus tristique. proin ultrices aliquet torquent ligula feugiat porttitor taciti, diam mi donec tellus potenti. </p>
-                </ul>
-                <ul>
-                    <img src="/img/barba.jpg">
+            
+                <div>
+                    
+                    <img class="foto" src="/img/cabelo.jpg">
+                    <h2>Cabelo</h2>
+                    <div class="linha">
+                        <img src="/img/Line.png">
+                    </div>
+                    <p>Lorem ipsum mattis sollicitudin quisque lacus at sed pharetra habitasse nec fermentum, interdum sit vel euismod netus donec pulvinar mollis lobortis mollis.</p>
+                </div>
+                <div>
+                    <img class="foto" src="/img/barba.jpg">
                     <h2>Barba</h2>
-                    <p>Lorem ipsum mattis sollicitudin quisque lacus at sed pharetra habitasse nec fermentum, interdum sit vel euismod netus donec pulvinar mollis lobortis mollis, varius tempus eros porta augue convallis inceptos volutpat risus tristique. proin ultrices aliquet torquent ligula feugiat porttitor taciti, diam mi donec tellus potenti. </p>
-                </ul>
-                <ul>
-                    <img src="/img/tranças.jpg">
+                    <div class="linha">
+                        <img src="/img/Line.png">
+                    </div>
+                    <p>Lorem ipsum mattis sollicitudin quisque lacus at sed pharetra habitasse nec fermentum, interdum sit vel euismod netus donec pulvinar mollis lobortis mollis.</p>
+                </div>
+                <div>
+                    <img  class="foto" src="/img/tranças.jpg">
                     <h2>Tranças</h2>
-                    <p>Lorem ipsum mattis sollicitudin quisque lacus at sed pharetra habitasse nec fermentum, interdum sit vel euismod netus donec pulvinar mollis lobortis mollis, varius tempus eros porta augue convallis inceptos volutpat risus tristique. proin ultrices aliquet torquent ligula feugiat porttitor taciti, diam mi donec tellus potenti. </p>
-                </ul>
-                <ul>
-                    <img src="/img/penteado.jpg">
+                    <div class="linha">
+                        <img src="/img/Line.png">
+                    </div>
+                    <p>Lorem ipsum mattis sollicitudin quisque lacus at sed pharetra habitasse nec fermentum, interdum sit vel euismod netus donec pulvinar mollis lobortis mollis.</p>
+                </div>
+                <div>
+                    <img class="foto" src="/img/penteado.jpg">
                     <h2>Penteados</h2>
-                    <p>Lorem ipsum mattis sollicitudin quisque lacus at sed pharetra habitasse nec fermentum, interdum sit vel euismod netus donec pulvinar mollis lobortis mollis, varius tempus eros porta augue convallis inceptos volutpat risus tristique. proin ultrices aliquet torquent ligula feugiat porttitor taciti, diam mi donec tellus potenti. </p>
-                </ul>
+                    <div class="linha">
+                        <img src="/img/Line.png">
+                    </div>
+                    <p>Lorem ipsum mattis sollicitudin quisque lacus at sed pharetra habitasse nec fermentum, interdum sit vel euismod netus donec pulvinar mollis lobortis mollis.</p>
+                </div>
         </services>
 
         <!-- preços dos cortes -->
@@ -87,10 +120,22 @@
                 <h2>lista de cortes</h2>
                 <h1>Cortes Clássicos</h1>
                 <ul>
-                <li>Side Parting</li>
-                <li>Side Parting</li> 
-                <li>Side Parting</li> 
-                <li>Side Parting</li> 
+                    <li>Side Parting --------------------------------------------- R$ 40,00 </li>
+                    <li>Side Parting --------------------------------------------- R$ 40,00</li> 
+                    <li>Side Parting --------------------------------------------- R$ 40,00 </li>
+                    <li>Side Parting --------------------------------------------- R$ 40,00</li> 
+                    <li>Side Parting --------------------------------------------- R$ 40,00 </li>
+                    <li>Side Parting --------------------------------------------- R$ 40,00</li> 
+                    <li>Side Parting --------------------------------------------- R$ 40,00 </li>
+                    <li>Side Parting --------------------------------------------- R$ 40,00</li> 
+                    <li>Side Parting --------------------------------------------- R$ 40,00 </li>
+                    <li>Side Parting --------------------------------------------- R$ 40,00</li> 
+                    <li>Side Parting --------------------------------------------- R$ 40,00 </li>
+                    <li>Side Parting --------------------------------------------- R$ 40,00</li> 
+                    <li>Side Parting --------------------------------------------- R$ 40,00 </li>
+                    <li>Side Parting --------------------------------------------- R$ 40,00</li> 
+                    <li>Side Parting --------------------------------------------- R$ 40,00 </li>
+                    <li>Side Parting --------------------------------------------- R$ 40,00</li>   
                 </ul>
             </div>
 
@@ -98,22 +143,47 @@
                 <h2>lista de cortes</h2>
                 <h1>Ajustes de Barba</h1>
                 <ul>
-                <li>Side Parting</li>
-                <li>Side Parting</li> 
-                <li>Side Parting</li> 
-                <li>Side Parting</li> 
+                    <li>Side Parting --------------------------------------------- R$ 40,00 </li>
+                    <li>Side Parting --------------------------------------------- R$ 40,00</li> 
+                    <li>Side Parting --------------------------------------------- R$ 40,00 </li>
+                    <li>Side Parting --------------------------------------------- R$ 40,00</li> 
+                    <li>Side Parting --------------------------------------------- R$ 40,00 </li>
+                    <li>Side Parting --------------------------------------------- R$ 40,00</li> 
+                    <li>Side Parting --------------------------------------------- R$ 40,00 </li>
+                    <li>Side Parting --------------------------------------------- R$ 40,00</li> 
+                    <li>Side Parting --------------------------------------------- R$ 40,00 </li>
+                    <li>Side Parting --------------------------------------------- R$ 40,00</li> 
+                    <li>Side Parting --------------------------------------------- R$ 40,00 </li>
+                    <li>Side Parting --------------------------------------------- R$ 40,00</li> 
+                    <li>Side Parting --------------------------------------------- R$ 40,00 </li>
+                    <li>Side Parting --------------------------------------------- R$ 40,00</li> 
+                    <li>Side Parting --------------------------------------------- R$ 40,00 </li>
+                    <li>Side Parting --------------------------------------------- R$ 40,00</li>    
+
+                
                 </ul>
             </div>
 
         </money>
-        <!-- fotos de barba -->
 
-        <photo class="photo">
+        <!--veja fotos -->
+
+        <barba class="barba">
+            <img src="img/Line.png">
             <h2>veja as fotos e selecione abaixo</h2>
             <h1>Cabelo/Barba</h1>
 
+        </barba>
+
+
+        <!-- fotos de barba -->
+
+        <photo class="photo">
+
+            
+
             <div>
-                <img src="img/cabelo 01.jpg">
+                <img  class="linha" src="img/cabelo 01.jpg">
                 <h2>Side Parting</h2>
                 <p>Lorem ipsum mattis sollicitudin quisque lacus at sed pharetra habitasse nec fermentum, interdum sit vel euismod netus donec pulvinar mollis lobortis mollis, varius tempus eros porta augue convallis inceptos volutpat risus tristique. proin ultrices aliquet torquent ligula feugiat porttitor taciti, diam mi donec tellus potenti.</p>
             </div>
@@ -129,14 +199,16 @@
                 <h2>Side Parting</h2>
                 <p>Lorem ipsum mattis sollicitudin quisque lacus at sed pharetra habitasse nec fermentum, interdum sit vel euismod netus donec pulvinar mollis lobortis mollis, varius tempus eros porta augue convallis inceptos volutpat risus tristique. proin ultrices aliquet torquent ligula feugiat porttitor taciti, diam mi donec tellus potenti.</p>
             </div>
-            <h1>Agende o seu corte ou barba agora mesmo!</h1>
-            <ul>
-                <li><a href="#">AGENDE O SEU CORTE</a></li>
-            </ul>
+            
 
         </photo>
-
-        <!--  -->
+        <!--agende o corte  -->
+            <agende class="agende">
+                    <h1>Agende o seu corte ou barba agora mesmo!</h1>
+                    <ul>
+                        <li><a href="#">AGENDE O SEU CORTE</a></li>
+                    </ul>
+            </agende>
 
         
 
